@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XES version 1.0 -->
+<!-- Created by Fluxicon Disco (fluxicon.com/disco) -->
+<!-- (c) 2020 by Fluxicon BV, Bomanshof 259, 5611 NS Eindhoven, The Netherlands -->
+<log xes.version="1.0" xmlns="http://www.xes-standard.org" xes.creator="Fluxicon Disco">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+	<extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext"/>
+	<global scope="trace">
+		<string key="concept:name" value="name"/>
+		<string key="variant" value="string"/>
+		<int key="variant-index" value="0"/>
+	</global>
+	<global scope="event">
+		<string key="concept:name" value="name"/>
+		<string key="lifecycle:transition" value="transition"/>
+		<string key="org:resource" value="resource"/>
+		<date key="time:timestamp" value="2020-10-16T15:15:55.113+02:00"/>
+		<string key="Activity" value="string"/>
+		<string key="Product" value="string"/>
+		<string key="Service_Type" value="string"/>
+		<string key="Resource" value="string"/>
+	</global>
+	<classifier name="Activity" keys="Activity"/>
+	<classifier name="Resource" keys="Resource"/>
+	<string key="lifecycle:model" value="standard"/>
+	<string key="creator" value="Fluxicon Disco"/>
+	<string key="library" value="Fluxicon Octane"/>
+	<trace>
+		<string key="concept:name" value="Case1"/>
+		<string key="variant" value="Variant 5"/>
+		<int key="variant-index" value="5"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Helen"/>
+			<date key="time:timestamp" value="2010-03-09T08:05:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Helen"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Helen"/>
+			<date key="time:timestamp" value="2010-03-11T10:30:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Helen"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-11T11:45:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case2"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Susi"/>
+			<date key="time:timestamp" value="2010-03-04T11:43:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Susi"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case3"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mary"/>
+			<date key="time:timestamp" value="2010-03-25T09:32:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Mary"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case4"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Fred"/>
+			<date key="time:timestamp" value="2010-03-06T11:41:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Fred"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case5"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Kenny"/>
+			<date key="time:timestamp" value="2010-03-18T10:54:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Kenny"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case6"/>
+		<string key="variant" value="Variant 6"/>
+		<int key="variant-index" value="6"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Harold"/>
+			<date key="time:timestamp" value="2010-03-25T17:09:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Harold"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Nancy"/>
+			<date key="time:timestamp" value="2010-03-25T17:16:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Nancy"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Elena"/>
+			<date key="time:timestamp" value="2010-03-26T08:36:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Elena"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case7"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Karen"/>
+			<date key="time:timestamp" value="2010-03-18T11:49:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Karen"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case8"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Karen"/>
+			<date key="time:timestamp" value="2010-03-11T09:20:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Karen"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case9"/>
+		<string key="variant" value="Variant 7"/>
+		<int key="variant-index" value="7"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Samuil"/>
+			<date key="time:timestamp" value="2010-03-19T19:47:00.000+01:00"/>
+			<string key="Activity" value="Inbound Email"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Samuil"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Samuil"/>
+			<date key="time:timestamp" value="2010-03-21T08:32:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Samuil"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Samuil"/>
+			<date key="time:timestamp" value="2010-03-21T08:33:00.000+01:00"/>
+			<string key="Activity" value="Handle Email"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Samuil"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case10"/>
+		<string key="variant" value="Variant 8"/>
+		<int key="variant-index" value="8"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Handle Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Jochem"/>
+			<date key="time:timestamp" value="2010-03-27T11:29:00.000+01:00"/>
+			<string key="Activity" value="Handle Email"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Jochem"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case11"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Irena"/>
+			<date key="time:timestamp" value="2010-03-27T08:09:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Irena"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case12"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Wil"/>
+			<date key="time:timestamp" value="2010-03-29T09:28:00.000+02:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Wil"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case13"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Ton"/>
+			<date key="time:timestamp" value="2010-03-05T10:13:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Ton"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case14"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Wil"/>
+			<date key="time:timestamp" value="2010-03-04T07:49:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Wil"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case15"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Erik"/>
+			<date key="time:timestamp" value="2010-03-07T08:06:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Erik"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case16"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Helen"/>
+			<date key="time:timestamp" value="2010-03-25T10:26:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Helen"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case17"/>
+		<string key="variant" value="Variant 9"/>
+		<int key="variant-index" value="9"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Kenny"/>
+			<date key="time:timestamp" value="2010-03-04T07:35:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Kenny"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Kenny"/>
+			<date key="time:timestamp" value="2010-03-04T07:53:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Kenny"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Kenny"/>
+			<date key="time:timestamp" value="2010-03-08T11:16:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Kenny"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Kenny"/>
+			<date key="time:timestamp" value="2010-03-11T11:15:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Kenny"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Monique"/>
+			<date key="time:timestamp" value="2010-03-14T17:53:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Monique"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case18"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Karen"/>
+			<date key="time:timestamp" value="2010-03-25T10:35:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Karen"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case19"/>
+		<string key="variant" value="Variant 10"/>
+		<int key="variant-index" value="10"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-14T14:08:00.000+01:00"/>
+			<string key="Activity" value="Inbound Email"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-18T08:06:00.000+01:00"/>
+			<string key="Activity" value="Inbound Email"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-18T08:07:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-18T08:09:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case20"/>
+		<string key="variant" value="Variant 11"/>
+		<int key="variant-index" value="11"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mariska"/>
+			<date key="time:timestamp" value="2010-03-27T11:39:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mariska"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mariska"/>
+			<date key="time:timestamp" value="2010-03-27T12:04:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mariska"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mariska"/>
+			<date key="time:timestamp" value="2010-04-04T09:34:00.000+02:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mariska"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case21"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Anne"/>
+			<date key="time:timestamp" value="2010-03-04T12:17:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Anne"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case22"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Erik"/>
+			<date key="time:timestamp" value="2010-03-22T08:30:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Erik"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case23"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Ton"/>
+			<date key="time:timestamp" value="2010-03-22T14:59:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Ton"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case24"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Kenny"/>
+			<date key="time:timestamp" value="2010-03-28T10:04:00.000+02:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Kenny"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case25"/>
+		<string key="variant" value="Variant 3"/>
+		<int key="variant-index" value="3"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-12T09:53:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-12T11:45:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case26"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Christian"/>
+			<date key="time:timestamp" value="2010-03-18T17:52:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Christian"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case27"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Anne"/>
+			<date key="time:timestamp" value="2010-03-29T14:33:00.000+02:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Anne"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case28"/>
+		<string key="variant" value="Variant 4"/>
+		<int key="variant-index" value="4"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Handle Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mary"/>
+			<date key="time:timestamp" value="2010-03-06T13:57:00.000+01:00"/>
+			<string key="Activity" value="Handle Email"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mary"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mary"/>
+			<date key="time:timestamp" value="2010-03-06T14:03:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mary"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case29"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-20T07:35:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case30"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Maja"/>
+			<date key="time:timestamp" value="2010-03-22T10:16:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Maja"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case31"/>
+		<string key="variant" value="Variant 12"/>
+		<int key="variant-index" value="12"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Wil"/>
+			<date key="time:timestamp" value="2010-03-20T10:48:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Wil"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Wil"/>
+			<date key="time:timestamp" value="2010-03-26T13:21:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Wil"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Erik"/>
+			<date key="time:timestamp" value="2010-04-24T13:12:00.000+02:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Erik"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case32"/>
+		<string key="variant" value="Variant 13"/>
+		<int key="variant-index" value="13"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Maja"/>
+			<date key="time:timestamp" value="2010-03-02T11:46:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Maja"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Clark"/>
+			<date key="time:timestamp" value="2010-03-04T17:59:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Clark"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Clark"/>
+			<date key="time:timestamp" value="2010-03-11T15:16:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Clark"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Clark"/>
+			<date key="time:timestamp" value="2010-03-20T14:26:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Clark"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Clark"/>
+			<date key="time:timestamp" value="2010-03-25T15:19:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Clark"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case33"/>
+		<string key="variant" value="Variant 2"/>
+		<int key="variant-index" value="2"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Richard"/>
+			<date key="time:timestamp" value="2010-03-08T11:40:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Richard"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Kenny"/>
+			<date key="time:timestamp" value="2010-03-08T12:03:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Kenny"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case34"/>
+		<string key="variant" value="Variant 2"/>
+		<int key="variant-index" value="2"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Elena"/>
+			<date key="time:timestamp" value="2010-03-14T07:45:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Elena"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Elena"/>
+			<date key="time:timestamp" value="2010-03-14T07:45:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Elena"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case35"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Steve"/>
+			<date key="time:timestamp" value="2010-03-18T17:34:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Steve"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case36"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Clark"/>
+			<date key="time:timestamp" value="2010-03-22T15:23:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Clark"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case37"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Elena"/>
+			<date key="time:timestamp" value="2010-03-11T11:06:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Elena"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case38"/>
+		<string key="variant" value="Variant 14"/>
+		<int key="variant-index" value="14"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Steve"/>
+			<date key="time:timestamp" value="2010-03-18T17:07:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Steve"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mathias"/>
+			<date key="time:timestamp" value="2010-03-19T08:10:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Mathias"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Karen"/>
+			<date key="time:timestamp" value="2010-03-19T08:54:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Karen"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Harold"/>
+			<date key="time:timestamp" value="2010-03-19T10:15:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Harold"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Ton"/>
+			<date key="time:timestamp" value="2010-03-20T15:00:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Ton"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case39"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Richard"/>
+			<date key="time:timestamp" value="2010-03-08T12:02:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Richard"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case40"/>
+		<string key="variant" value="Variant 15"/>
+		<int key="variant-index" value="15"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Richard"/>
+			<date key="time:timestamp" value="2010-03-22T12:27:00.000+01:00"/>
+			<string key="Activity" value="Inbound Email"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Richard"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Email Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Richard"/>
+			<date key="time:timestamp" value="2010-03-22T13:09:00.000+01:00"/>
+			<string key="Activity" value="Email Outbound"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Richard"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Email Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Richard"/>
+			<date key="time:timestamp" value="2010-03-22T13:13:00.000+01:00"/>
+			<string key="Activity" value="Email Outbound"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Richard"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case41"/>
+		<string key="variant" value="Variant 16"/>
+		<int key="variant-index" value="16"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Ton"/>
+			<date key="time:timestamp" value="2010-03-26T16:27:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Ton"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Ton"/>
+			<date key="time:timestamp" value="2010-03-27T12:27:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Ton"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case42"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Christian"/>
+			<date key="time:timestamp" value="2010-03-26T10:03:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Christian"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case43"/>
+		<string key="variant" value="Variant 17"/>
+		<int key="variant-index" value="17"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Handle Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Jochem"/>
+			<date key="time:timestamp" value="2010-03-26T12:20:00.000+01:00"/>
+			<string key="Activity" value="Handle Email"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Jochem"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Jochem"/>
+			<date key="time:timestamp" value="2010-03-26T12:27:00.000+01:00"/>
+			<string key="Activity" value="Handle Email"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Jochem"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Jochem"/>
+			<date key="time:timestamp" value="2010-03-26T14:43:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Jochem"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Jochem"/>
+			<date key="time:timestamp" value="2010-03-26T16:21:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Jochem"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Jochem"/>
+			<date key="time:timestamp" value="2010-03-27T14:24:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Jochem"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Jochem"/>
+			<date key="time:timestamp" value="2010-03-28T16:23:00.000+02:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Jochem"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case44"/>
+		<string key="variant" value="Variant 2"/>
+		<int key="variant-index" value="2"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Ton"/>
+			<date key="time:timestamp" value="2010-03-07T14:59:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Ton"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Clark"/>
+			<date key="time:timestamp" value="2010-03-19T17:36:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Clark"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case45"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Steffi"/>
+			<date key="time:timestamp" value="2010-03-07T11:14:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Steffi"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case46"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Clark"/>
+			<date key="time:timestamp" value="2010-03-29T14:14:00.000+02:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Clark"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case47"/>
+		<string key="variant" value="Variant 18"/>
+		<int key="variant-index" value="18"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Barbara"/>
+			<date key="time:timestamp" value="2010-03-25T13:59:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Barbara"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Jochem"/>
+			<date key="time:timestamp" value="2010-03-25T16:48:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Jochem"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mathias"/>
+			<date key="time:timestamp" value="2010-03-26T10:08:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Mathias"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Christian"/>
+			<date key="time:timestamp" value="2010-03-26T14:34:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Christian"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Susi"/>
+			<date key="time:timestamp" value="2010-03-27T07:22:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Susi"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case48"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Elena"/>
+			<date key="time:timestamp" value="2010-03-25T08:09:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Elena"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case49"/>
+		<string key="variant" value="Variant 4"/>
+		<int key="variant-index" value="4"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Handle Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Samuil"/>
+			<date key="time:timestamp" value="2010-03-19T07:25:00.000+01:00"/>
+			<string key="Activity" value="Handle Email"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Samuil"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Samuil"/>
+			<date key="time:timestamp" value="2010-03-19T07:34:00.000+01:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Samuil"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case50"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Johan"/>
+			<date key="time:timestamp" value="2010-03-14T13:02:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="MacBook Pro"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Johan"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case51"/>
+		<string key="variant" value="Variant 19"/>
+		<int key="variant-index" value="19"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mary"/>
+			<date key="time:timestamp" value="2010-03-04T16:54:00.000+01:00"/>
+			<string key="Activity" value="Inbound Email"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mary"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Email Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mary"/>
+			<date key="time:timestamp" value="2010-03-06T14:35:00.000+01:00"/>
+			<string key="Activity" value="Email Outbound"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mary"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mary"/>
+			<date key="time:timestamp" value="2010-03-06T14:37:00.000+01:00"/>
+			<string key="Activity" value="Handle Email"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mary"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case52"/>
+		<string key="variant" value="Variant 3"/>
+		<int key="variant-index" value="3"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Michael"/>
+			<date key="time:timestamp" value="2010-03-27T17:33:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Michael"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Call Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Michael"/>
+			<date key="time:timestamp" value="2010-03-28T11:22:00.000+02:00"/>
+			<string key="Activity" value="Call Outbound"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Michael"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case53"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Call"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Henk"/>
+			<date key="time:timestamp" value="2010-03-22T10:04:00.000+01:00"/>
+			<string key="Activity" value="Inbound Call"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Referred to Servicer"/>
+			<string key="Resource" value="Henk"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case54"/>
+		<string key="variant" value="Variant 20"/>
+		<int key="variant-index" value="20"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<event>
+			<string key="concept:name" value="Inbound Email"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mariska"/>
+			<date key="time:timestamp" value="2010-03-25T14:49:00.000+01:00"/>
+			<string key="Activity" value="Inbound Email"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mariska"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Handle Case"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mariska"/>
+			<date key="time:timestamp" value="2010-03-26T11:01:00.000+01:00"/>
+			<string key="Activity" value="Handle Case"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mariska"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Email Outbound"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:resource" value="Mariska"/>
+			<date key="time:timestamp" value="2010-03-26T11:17:00.000+01:00"/>
+			<string key="Activity" value="Email Outbound"/>
+			<string key="Product" value="iPhone"/>
+			<string key="Service_Type" value="Product Assistance"/>
+			<string key="Resource" value="Mariska"/>
+		</event>
+	</trace>
+</log>
